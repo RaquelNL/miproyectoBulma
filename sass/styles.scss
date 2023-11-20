@@ -1,0 +1,69 @@
+@charset "utf-8";
+@import "../bulma.sass";
+
+
+.navbar {
+    background-image: url(img/navbar.avif); // Cambia el color de fondo del navbar
+    padding: 1.5rem 1rem; // Aumenta el relleno del navbar
+  }
+  
+
+  body {
+    background-image: url(img/fondojpg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Añade transparencia al color de fondo */
+    background-color: rgba(255, 255, 255, 0.5); /* Cambia el último valor (0.5) según tu preferencia, 0 es completamente transparente, 1 es completamente opaco */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+     background-color: rgba(0, 0, 0, 0.5); /* Añade transparencia al color de fondo */
+
+  
+    .modal-card {
+      background-color: #fff;
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .modal-close {
+      cursor: pointer;
+      margin-left: auto; /* Empuja el botón hacia la derecha */
+    }
+  
+    // Estilo para mostrar el modal cuando está activo
+    &:target {
+      display: flex;
+    }
+  
+    // Oculta el contenido del modal al cargar la página
+    &:not(:target) {
+      .modal-card {
+        display: none;
+      }
+    }
+  }
+
+  .modal-card-foot {
+    display: flex;
+    justify-content: flex-end; /* Alinea el contenido al final (derecha) */
+  }
+  
+
+.card-header {
+  background-image: url('img/navbar.avif');
+}

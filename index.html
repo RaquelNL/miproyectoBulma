@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CEX</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+
+<body>
+    <nav class="navbar is-light is-medium">
+        <div class="navbar-brand pl-4">
+            <a class="navbar-item">
+                <h1 class="title is-capitalized is-italic pl-4 has-text-white">Tienda de videojuegos</h1>
+            </a>
+            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navMenu" class="navbar-menu">
+            <div class="navbar-start">
+            
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="#" class="navbar-link has-text-white" style="background-color: rgba(255, 255, 255, 0.3);"><strong>JUEGOS</strong></a>
+                    <div class="navbar-dropdown" style="background-color: black;">
+                        <a href="#" class="navbar-item has-text-white">Acción</a>
+                        <a href="#" class="navbar-item has-text-white">Aventura</a>
+                        <a href="#" class="navbar-item has-text-white">Deportes</a>
+                        <a href="#" class="navbar-item has-text-white">Estrategia</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="#" class="navbar-link has-text-white" style="background-color: rgba(255, 255, 255, 0.3);"><strong>MOVILES</strong></a>
+                    <div class="navbar-dropdown" style="background-color: black;">
+                        <a href="#" class="navbar-item has-text-white">Smartphones</a>
+                        <a href="#" class="navbar-item has-text-white">Accesorios</a>
+                        <a href="#" class="navbar-item has-text-white">Fundas</a>
+                        <a href="#" class="navbar-item has-text-white">Cargadores</a>
+                    </div>
+                </div>
+    
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="#" class="navbar-link has-text-white" style="background-color: rgba(255, 255, 255, 0.3);"><strong>ELECTRÓNICA</strong></a>
+                    <div class="navbar-dropdown" style="background-color: black;">
+                        <a href="#" class="navbar-item has-text-white">TV y Video</a>
+                        <a href="#" class="navbar-item has-text-white">Audio</a>
+                        <a href="#" class="navbar-item has-text-white">Cámaras</a>
+                        <a href="#" class="navbar-item has-text-white">Wearables</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="#" class="navbar-link has-text-white" style="background-color: rgba(255, 255, 255, 0.3);"><strong>CINE Y SERIES</strong></a>
+                    <div class="navbar-dropdown" style="background-color: black;">
+                        <a href="#" class="navbar-item has-text-white">Películas</a>
+                        <a href="#" class="navbar-item has-text-white">Series</a>
+                        <a href="#" class="navbar-item has-text-white">Documentales</a>
+                        <a href="#" class="navbar-item has-text-white">Ediciones Especiales</a>
+                    </div>
+                </div>
+
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a href="#" class="navbar-link has-text-white" style="background-color: rgba(255, 255, 255, 0.3);"><strong>INFORMÁTICA</strong></a>
+                    <div class="navbar-dropdown" style="background-color: black;">
+                        <a href="#" class="navbar-item has-text-white">Portátiles</a>
+                        <a href="#" class="navbar-item has-text-white">PC de Sobremesa</a>
+                        <a href="#" class="navbar-item has-text-white">Periféricos</a>
+                        <a href="#" class="navbar-item has-text-white">Componentes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="notification is-link is-light has-text-centered">
+        <button class="delete"></button>
+        Nueva página web para la compra-venta de los juegos que desees, con ofertas y mucho más ¡No te la pierdas!
+    </div>
+
+    <section class="section" style="margin-top: 1%;">
+        <div class="columns is-multiline">
+            <div class="column is-9-desktop">
+                <div class="columns is-multiline is-mobile">
+                    <!-- Contenido de las tarjetas -->
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/gta.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Grand Theft Auto V (5)</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 15.00€
+                                    <br>
+                                    Compramos 6.00€
+                                    <br>
+                                    Intercambiamos 9.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#modal-gta" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/callofduty.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Call Of Duty: Black Ops 4</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 6.00€
+                                    <br>
+                                    Compramos 1.40€
+                                    <br>
+                                    Intercambiamos 2.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/farcry.jpg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Far Cry 5</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 10.00€
+                                    <br>
+                                    Compramos 5.00€
+                                    <br>
+                                    Intercambiamos 6.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/uncharted.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">Uncharted 4</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 6.00€
+                                    <br>
+                                    Compramos 1.40€
+                                    <br>
+                                    Intercambiamos 9.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/spiderman.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Spider-Man 2</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 68.00€
+                                    <br>
+                                    Compramos 42.00€
+                                    <br>
+                                    Intercambiamos 49.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/fifa.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            FIFA 22</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 12.00€
+                                    <br>
+                                    Compramos 2.00€
+                                    <br>
+                                    Intercambiamos 4.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/thelastofus.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Last Of Us, The - Remastered</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 12.00€
+                                    <br>
+                                    Compramos 6.00€
+                                    <br>
+                                    Intercambiamos 7.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/reddead.jpg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Red Dead Redemption 2</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 18.00€
+                                    <br>
+                                    Compramos 9.00€
+                                    <br>
+                                    Intercambiamos 11.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/animalcrossing.jpg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Animal Crossing: New Horizons</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 42.00€
+                                    <br>
+                                    Compramos 21.00€
+                                    <br>
+                                    Intercambiamos 27.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/granturismo.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Gran Turismo Sport</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 10.00€
+                                    <br>
+                                    Compramos 5.00€
+                                    <br>
+                                    Intercambiamos 6.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/mariokart.jpg" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Mario Kart 8 Deluxe</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 48.00€
+                                    <br>
+                                    Compramos 24.00€
+                                    <br>
+                                    Intercambiamos 31.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column is-4-desktop is-6-tablet is-12-mobile">
+                        <div class="card">
+                            <div class="card-image">
+                                <figure class="image is-4by3">
+                                    <img src="img/pokemon.webp" alt="Placeholder image">
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="media">
+                                    <div class="media-left">
+                                    </div>
+                                    <div class="media-content">
+                                        <p class="title is-4">
+                                            Pokemon Purpura</p>
+                                    </div>
+                                </div>
+
+                                <div class="content">
+                                    Vendemos 32.00€
+                                    <br>
+                                    Compramos 16.00€
+                                    <br>
+                                    Intercambiamos 21.00€
+                                </div>
+                                <footer class="card-footer">
+                                    <a href="#" class="card-footer-item">Detalles del juego</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Menú en la derecha -->
+            <div class="column is-3-desktop is-6-tablet">
+                <aside class="menu">
+                    <!-- Tarjeta de juegos más vendidos -->
+                    <div class="card mb-4">
+                        <header class="card-header">
+                            <p class="card-header-title has-text-white">
+                                Juegos más vendidos
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <ul class="menu-list">
+                                <li><a href="#">Call Of Duty: Black Ops 4 (Sin DLC)</a></li>
+                                <li><a href="#">Far Cry 5 (Sin DLC)</a></li>
+                                <li><a href="#">Uncharted 4: El Desenlace Del Ladrón</a></li>
+                                <li><a href="#">Grand Theft Auto V (5)</a></li>
+                                <li><a href="#">Spider-Man 2 (Sin DLC)</a></li>
+                                <li><a href="#">God Of War (2018) Sin DLC</a></li>
+                                <li><a href="#">Call Of Duty: Black Ops III</a></li>
+                                <li><a href="#">Super Mario Odyssey</a></li>
+                                <!-- Agrega más juegos según sea necesario -->
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta de juegos más buscados -->
+                    <div class="card mb-4">
+                        <header class="card-header">
+                            <p class="card-header-title has-text-white">
+                                Juegos más buscados
+                            </p>
+                        </header>
+                        <div class="card-content">
+                            <ul class="menu-list">
+                                <li><a href="#">Animal Crossing: New Horizons</a></li>
+                                <li><a href="#">Legend of Zelda: Breath Of The Wild</a></li>
+                                <li><a href="#">EA Sports FC 24</a></li>
+                                <li><a href="#">Minecraft</a></li>
+                                <li><a href="#">Legend of Zelda: Tears of the Kingdom</a></li>
+                                <li><a href="#">Hogwarts Legacy</a></li>
+                                <li><a href="#">Assassin's Creed: Mirage (Sin DLC)</a></li>
+                                <li><a href="#">Watch Dogs 2</a></li>
+                                <!-- Agrega más juegos según sea necesario -->
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!-- Modal para GTA -->
+    <div id="modal-gta" class="modal">
+        <div class="modal-card" style="max-width: 600px;">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Detalles de Grand Theft Auto V (5)</p>
+                <a href="#" class="modal-close" aria-label="close">Cerrar</a>
+            </header>
+            <section class="modal-card-body">
+                <!-- Contenido del modal -->
+                <p>Los Santos - una extensa soleada metrópolis llena de gurús de la autoayuda, estrellitas y
+                    celebridades de descoloramiento, una vez la envidia del mundo occidental, ahora luchan por
+                    mantenerse a flote en una época de incertidumbre económica y barata reality TV.
+
+                    En medio de la confusión, tres delincuentes muy diferentes trazar sus propias posibilidades de
+                    supervivencia y el éxito - Franklin, un ex gángster callejero, buscando oportunidades de verdad y
+                    mucho dinero, Michael, un ex-convicto profesional cuyo retiro es mucho menos optimista que él
+                    esperaba lo sería, y Trevor, un maníaco violento impulsado por el próximo gran golpe. Quedando sin
+                    opciones, la tripulación arriesga todo en una serie de atracos atrevidos y peligrosos que les podría
+                    fijar toda la vida.
+
+                    El más grande, más dinámico y más diversa abran el mundo creado, Grand Theft Auto V combina la
+                    narración y jugabilidad en formas como los jugadores saltar repetidamente dentro y fuera de la vida
+                    de tres personajes de plomo del juego, jugando todos los lados de la historia del juego
+                    entrelazadas.
+
+                    Todas las características clásicas de la innovadora serie retorno, incluyendo increíble atención al
+                    detalle y de Grand Theft Auto oscuramente humorística asumir la cultura moderna, junto con un
+                    enfoque y ambicioso para abrir el mundo multijugador.</p>
+            </section>
+            <footer class="modal-card-foot">
+                <!-- Botón de cerrar al final del modal -->
+                <a href="#" class="button is-danger modal-close">Cerrar</a>
+            </footer>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="is-flex is-justify-content-center is-align-items-center">
+            <div class="content">
+                <a href="/site/terms" class="">Términos</a>
+                <a href="/policy/privacy" class="">Política de Privacidad</a>
+                <a href="/policy/cookies" class="">Política de cookies</a>
+                <a id="ot-sdk-btn" class="optanon-toggle-display manage-cookies-btn">Configuración de cookies</a>
+            </div>
+        </div>
+        <div class="is-flex is-justify-content-center is-align-items-center">
+        <div>
+            <a href="https://www.facebook.com/CeXES/" target="_blank" rel="nofollow noopener noreferrer">
+                <img src="img/icons8-facebook.svg" class="facebook"></a>
+            <a href="https://twitter.com/CeX_Espana" target="_blank" rel="nofollow noopener noreferrer">
+                <img src="img/icons8-twitter.svg" class="twitter"></a>
+            <a href="https://www.youtube.com/cexespana" target="_blank" rel="nofollow noopener noreferrer">
+                <img src="img/icons8-youtube.svg" class="youtube"></a>
+            <a href="https://www.instagram.com/cexes" target="_blank" rel="nofollow noopener noreferrer">
+                <img src="img/icons8-instagram.svg" class="instagram"></a>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>
