@@ -84,6 +84,17 @@
         <button class="delete"></button>
         Nueva página web para la compra-venta de los juegos que desees, con ofertas y mucho más ¡No te la pierdas!
     </div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        (document.querySelectorAll('.notification .delete') || []).forEach(($delete) => {
+          const $notification = $delete.parentNode;
+      
+          $delete.addEventListener('click', () => {
+            $notification.parentNode.removeChild($notification);
+          });
+        });
+      });
+    </script>
 
     <section class="section" style="margin-top: 1%;">
         <div class="columns is-multiline">
